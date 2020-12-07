@@ -6,9 +6,9 @@ require 'json'
 module JPush
   class ReportClient
     @@REPORT_HOST_NAME = 'https://report.jpush.cn'
-    @@REPORT_RECEIVE_PATH = '/v3/received'
+    @@REPORT_RECEIVE_PATH = '/v3/received/detail'
     @@REPORT_USER_PATH = '/v3/users'
-    @@REPORT_MESSAGE_PATH = '/v3/messages'
+    @@REPORT_MESSAGE_PATH = '/v3/messages/detail'
     def initialize(maxRetryTimes)
       @httpclient=JPush::NativeHttpClient.new(maxRetryTimes)
     end
